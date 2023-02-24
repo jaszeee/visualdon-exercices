@@ -1,37 +1,56 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/script.js" async></script>
 
-    <title>1-SVG</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/script.js" async></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
 
-    <h1>Dessiner des formes</h1>
-    <h2>Rectangle</h2>
+  <title>1-SVG</title>
+</head>
 
-    <h2>Donut</h2>
+<body>
 
-
-    <h2>Ligne</h2>
-
-
-    <h2>Path</h2>
+  <h1>Dessiner des formes</h1>
+  <h2>Rectangle</h2>
+  <svg>
+    <rect x="0" y="0" width="400" height="100" fill="red"></rect>
+  </svg>
 
 
-    <h1>Animer des formes</h1>
-
-    <h2>On click</h2>
-
-    <h2>On hover</h2>
-
-    <h2>Prenez la première lettre de votre prénom que vous avez créée ci-dessus. Faite bouger une forme de votre choix le long de la lettre</h2>
+  <h2>Donut</h2>
+  <svg>
+    <circle cx="50" cy="50" r="60" stroke="pink" stroke-width="5" fill="none" />
+    <circle cx="50" cy="50" r="30" stroke="pink" stroke-width="5" fill="none" />
+  </svg>
 
 
-  </body>
+  <h2>Ligne</h2>
+  <svg>
+    <line x1="20" y1="50" x2="30" y2="100" stroke="green" />
+  </svg>
+
+  <h2>Path</h2><svg>
+    <path d="M 0 50 L 50 50 V 50 150 L -100 50 M 60 150 L 60 50 H 90 V 150 M 60 150 V 100 H 90 M M 80 150  " fill="none"
+      stroke="black" stroke-width="5" />
+  </svg>
+
+
+
+  <h1>Animer des formes</h1>
+
+  <h2>On click</h2>
+
+  <h2>On hover</h2>
+
+  <h2>Prenez la première lettre de votre prénom que vous avez créée ci-dessus. Faite bouger une forme de votre choix le
+    long de la lettre</h2>
+
+
+</body>
+
 </html>
